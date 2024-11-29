@@ -41,56 +41,66 @@
     </style>
 
     <div id="filters" class="navbar navbar-expand-md">
-        <div class="filter">
-            <i class="fa-solid fa-fire"></i>
-            <p>trending</p>
+        <button class="navbar-toggler"
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarNavAltMarkup"
+        >
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="filter">
+                <i class="fa-solid fa-fire"></i>
+                <p>trending</p>
+            </div>
+            <div class="filter">
+                <i class="fa-solid fa-bed"></i>
+                <p>rooms</p>
+            </div>
+            <div class="filter">
+                <i class="fa-solid fa-city"></i>
+                <p>Iconic cities</p>
+            </div>
+            <div class="filter">
+                <i class="fa-solid fa-mountain"></i>
+                <p>mountains</p>
+            </div>
+            <div class="filter">
+                <i class="fa-solid fa-chess-rook"></i>
+                <p>castles</p>
+            </div>
+            <div class="filter">
+                <i class="fa-solid fa-person-swimming"></i>
+                <p>Amazing pools</p>
+            </div>
+            <div class="filter">
+                <i class="fa-solid fa-campground"></i>
+                <p>camping</p>
+            </div>
+            <div class="filter">
+                <i class="fa-solid fa-tractor"></i>
+                <p>farms</p>
+            </div>
+            <div class="filter">
+                <i class="fa-solid fa-snowman"></i>
+                <p>snow</p>
+            </div>
+            <div class="filter">
+                <i class="fa-solid fa-sailboat"></i>
+                <p>boat</p>
+            </div>
+            <div class="filter">
+                <i class="fa-solid fa-igloo"></i>
+                <p>igloo</p>
+            </div>
+            <div class="tax-toggle">
+                <div class="form-check-reverse form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Display total cost after taxes</label>
+                  </div>
+            </div>
         </div>
-        <div class="filter">
-            <i class="fa-solid fa-bed"></i>
-            <p>rooms</p>
-        </div>
-        <div class="filter">
-            <i class="fa-solid fa-city"></i>
-            <p>Iconic cities</p>
-        </div>
-        <div class="filter">
-            <i class="fa-solid fa-mountain"></i>
-            <p>mountains</p>
-        </div>
-        <div class="filter">
-            <i class="fa-solid fa-chess-rook"></i>
-            <p>castles</p>
-        </div>
-        <div class="filter">
-            <i class="fa-solid fa-person-swimming"></i>
-            <p>Amazing pools</p>
-        </div>
-        <div class="filter">
-            <i class="fa-solid fa-campground"></i>
-            <p>camping</p>
-        </div>
-        <div class="filter">
-            <i class="fa-solid fa-tractor"></i>
-            <p>farms</p>
-        </div>
-        <div class="filter">
-            <i class="fa-solid fa-snowman"></i>
-            <p>snow</p>
-        </div>
-        <div class="filter">
-            <i class="fa-solid fa-sailboat"></i>
-            <p>boat</p>
-        </div>
-        <div class="filter">
-            <i class="fa-solid fa-igloo"></i>
-            <p>igloo</p>
-        </div>
-        <div class="tax-toggle">
-            <div class="form-check-reverse form-switch">
-                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                <label class="form-check-label" for="flexSwitchCheckDefault">Display total cost after taxes</label>
-              </div>
-        </div>
+        
     </div>
     <div class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-1 mt-3">
         <% for(let listing of allListings){%>
