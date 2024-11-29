@@ -37,33 +37,10 @@
             cursor: pointer;
         }
 
-        /* For mobile devices */
-@media (max-width: 768px) {
-    #filters {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .filter {
-        width: 90%; /* Occupy most of the screen width */
-        margin-bottom: 10px;
-    }
-}
-
-/* For tablets */
-@media (max-width: 992px) and (min-width: 769px) {
-    #filters {
-        justify-content: space-evenly;
-    }
-
-    .filter {
-        width: 150px;
-    }
-}
-
+        
     </style>
 
-    <div id="filters">
+    <div id="filters" class="navbar navbar-expand-md">
         <div class="filter">
             <i class="fa-solid fa-fire"></i>
             <p>trending</p>
